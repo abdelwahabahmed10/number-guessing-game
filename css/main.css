@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: #fff6ec;
+  color: #4e342e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffe8d6;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  color: #d2691e;
+}
+
+.description {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  width: 100%;
+  border: 2px solid #e0a96d;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #f4a261;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e76f51;
+}
+
+#message {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+#attempts {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #7b4f32;
+}
+#attempts_used {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #7b4f32;
+}
+
+.hidden {
+  display: none;
+}
+.fade {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.win {
+  animation: pop 0.5s ease-in-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.win-effect {
+  animation: winFlash 0.5s ease-in-out 2;
+}
+
+@keyframes winFlash {
+  0% { background-color: #dff0d8; }
+  50% { background-color: #a5d6a7; }
+  100% { background-color: #dff0d8; }
+}
