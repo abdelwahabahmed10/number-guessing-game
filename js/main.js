@@ -59,7 +59,7 @@ reset_btn.addEventListener("click", function () {
   remaining_attempts = 10;
   attempts.textContent = `Attempts left : ${remaining_attempts}`;
   used_attempts = 0;
-  attempts.textContent = `Attempts left : ${used_attempts}`;
+  attempts_used.textContent = `Attempts used : ${used_attempts}`;
   Random_number = Math.floor(Math.random() * 100) + 1;
   console.log("New random number: ", Random_number);
   guess_input.value = "";
